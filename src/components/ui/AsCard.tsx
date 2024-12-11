@@ -1,6 +1,5 @@
 "use client"
-import React, { useState } from 'react'
-import { SVGProps } from "react"
+import React from 'react'
 import { motion } from "framer-motion";
 
 export interface IAsCard {
@@ -14,7 +13,6 @@ export interface IAsCard {
 
 const AsCard = ({ data }: { data: IAsCard }) => {
     const { description, row, title, number } = data
-    const [hover, setHover] = useState(false)
 
     const Row2 = () => (
         <motion.svg
@@ -74,8 +72,6 @@ const AsCard = ({ data }: { data: IAsCard }) => {
     return (
         <div
             className='w-[18rem]'
-            onMouseOver={() => setHover(true)}
-            onMouseOut={() => setHover(false)}
         >
             <div className='flex items-center mb-5 gap-4 w-[max-content]'>
                 <motion.div

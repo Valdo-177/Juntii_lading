@@ -6,7 +6,7 @@ interface IBtnApp {
     icon: 'GooglePlay' | 'AppStore'
 }
 
-const BtnApp = ({ icon = 'AppStore', title = 'Titulo del botón' }: IBtnApp) => {
+const BtnApp = ({ icon = 'AppStore' }: IBtnApp) => {
     return (
         <div className='cursor-pointer hover:bg-[#019d6f] flex items-center gap-2 bg-[#00B27D] px-[15px] py-[9px] text-white w-[max-content] rounded-[10px] shadow-lg'>
             {icon == 'AppStore' ? <GooglePlay /> : <AppStore />}

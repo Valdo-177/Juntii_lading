@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import AsCard from './AsCard';
 import { DataAsSection } from '@/source/DataSource';
 import Image from 'next/image';

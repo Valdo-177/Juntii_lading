@@ -1,10 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { AlignRight, Thermometer } from "lucide-react";
 import { Button } from "../ui/button";
-import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Logo } from "@/assets/svg";
 
 
@@ -12,8 +9,6 @@ const Nav = () => {
     const [showNav, setShowNav] = useState(true);
     const [scrollY, setScrollY] = useState(0);
     const [isScrolled, setIsScrolled] = useState(false);
-    const [open, setOpen] = useState(false);
-    const path = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
