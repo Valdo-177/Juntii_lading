@@ -5,7 +5,7 @@ import movil1 from '@/assets/img/movil1.png'
 import movil2 from '@/assets/img/movil2.png'
 import BtnApp from './BtnApp'
 import { HeroBg2 } from '@/assets/svg'
-import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 
 const DischargeSection = () => {
@@ -13,9 +13,9 @@ const DischargeSection = () => {
     const XMovement = useTransform(scrollY, [2699, 3389], ['-29rem', '-2rem']);
     const XMovement2 = useTransform(scrollY, [2699, 3389], ['29rem', '2rem']);
 
-    useMotionValueEvent(scrollY, "change", (latest) => {
-        console.log("Page scroll: ", latest)
-    })
+    // useMotionValueEvent(scrollY, "change", (latest) => {
+    //     console.log("Page scroll: ", latest)
+    // })
 
     return (
         <section className='relative overflow-hidden w-full'>

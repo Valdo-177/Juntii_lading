@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import AsCard from './AsCard';
-import { DataAsSection } from '@/source/DataSource';
+import DataSource from '@/source/DataSource';
 import Image from 'next/image';
 import movil from '@/assets/img/PhoneMockupHero.png';
 import { HeroBg } from '@/assets/svg';
@@ -10,6 +10,7 @@ import { HeroBg } from '@/assets/svg';
 const AsSection = () => {
     const { scrollY } = useScroll(); 
     const yMovement = useTransform(scrollY, [1000, 1558], ['10rem', '0rem']); 
+    const {DataAsSection} = DataSource()
 
     
     return (

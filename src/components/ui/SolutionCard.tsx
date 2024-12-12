@@ -1,22 +1,22 @@
-import { Accessibility } from 'lucide-react'
-import React from 'react'
+import React from 'react';
 
-interface ISolutionCard {
+export interface ISolutionCard {
     title: string;
     description: string;
+    icon: React.ReactElement;
 }
 
 const SolutionCard = ({ data }: { data: ISolutionCard }) => {
-    const {description, title} = data;
+    const { description, title, icon } = data;
     return (
-        <div className='w-[265px] flex flex-col items-center p-3'>
-            <div className='bg-[#E4FFEE] p-5 mb-5 rounded-2xl w-[max-content] text-[#40975F]'>
-                <Accessibility />
+        <div className="w-[265px] flex flex-col items-center p-3">
+            <div className="bg-[#E4FFEE] p-5 mb-5 rounded-2xl w-[max-content] text-[#40975F]">
+                {icon} {/* Renderiza el ícono aquí */}
             </div>
-            <p className='font-bold'>{title}</p>
-            <p className='text-center text-sm'>{description}</p>
+            <p className="font-bold">{title}</p>
+            <p className="text-center text-sm">{description}</p>
         </div>
-    )
-}
+    );
+};
 
-export default SolutionCard
+export default SolutionCard;

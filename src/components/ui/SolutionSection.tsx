@@ -1,11 +1,12 @@
 "use client"
 import React from 'react'
 import SolutionCard from './SolutionCard'
-import { DataSolutionSection } from '@/source/DataSource'
 import { motion } from "motion/react"
+import DataSource from '@/source/DataSource'
 
 const SolutionSection = () => {
 
+    const {DataSolutionSection} = DataSource()
     return (
         <section className='flex flex-col items-center my-20'>
             <span className='uppercase text-primary font-semibold tracking-[0.1rem]'>Solución</span>
