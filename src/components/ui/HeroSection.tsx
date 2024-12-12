@@ -11,12 +11,12 @@ const HeroSection = () => {
 
     const downloadAPK = () => {
         // URL del archivo APK
-        const apkUrl = '../../assets/app-release.apk'; // Cambia esta URL por la ubicación de tu archivo APK
+        const apkUrl = 'https://github.com/Valdo-177/Juntii_lading/raw/refs/heads/main/src/assets/app-release.apk'; // Cambia esta URL por la ubicación de tu archivo APK
         
         // Crear un enlace temporal
         const link = document.createElement('a');
         link.href = apkUrl;
-        link.download = 'JuntiiApp.apk';  // Nombre del archivo con el que se descargará
+        link.download = 'Juntii.apk';  // Nombre del archivo con el que se descargará
       
         // Simular un clic en el enlace para iniciar la descarga
         link.click();
