@@ -47,7 +47,6 @@ const DischargeSection = () => {
                 <h2 className='sm:w-[400px] font-bold text-3xl text-center mt-9'>Empieza a ahorrar y pedir como nunca antes.</h2>
                 <p className='sm:w-[50rem] text-center'>Ya no tienes que elegir entre comodidad, precio y sostenibilidad. Con Juntii, transformar tu experiencia de delivery es tan fácil como unirte a tu comunidad. Descubre cómo pedir en grupo te permite ahorrar más, recibir cashback, disfrutar de tus comidas en su punto ideal y, al mismo tiempo, reducir el impacto ambiental. Únete al movimiento Juntii y sé parte de la revolución de los pedidos inteligentes.</p>
                 <div className='flex items-center gap-3 mt-10 flex-col sm:flex-row'>
-                    <BtnApp icon='GooglePlay' title='Descargar en App Store' />
                     <BtnApp icon='AppStore' title='Disponible en Google Play' onClick={downloadAPK}/>
                 </div>
             </div>
