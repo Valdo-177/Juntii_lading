@@ -47,7 +47,7 @@ const HeroSection = () => {
                     <h1 id='GetApp' className='font-bold sm:text-[70px] text-4xl leading-[40px] text-center sm:text-start sm:leading-[80px] w-full sm:w-[762px]'>¡Transforma tu forma de pedir comida a domicilio con Juntii!</h1>
                     <p className='text-lg text-center sm:text-start'>Pide en comunidad, ahorra más, y cuida el planeta.</p>
                     <div className='flex items-center gap-3 flex-col sm:flex-row'>
-                    <BtnApp icon='AppStore' title='Disponible en Google Play' onClick={downloadAPK}/>
+                    <BtnApp icon='AppStore' title='Disponible aqui' onClick={downloadAPK}/>
                     </div>
                 </motion.div>
                 <div className='relative'>
