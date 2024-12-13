@@ -13,9 +13,18 @@ const DischargeSection = () => {
     const XMovement = useTransform(scrollY, [2699, 3389], ['-29rem', '-2rem']);
     const XMovement2 = useTransform(scrollY, [2699, 3389], ['29rem', '2rem']);
 
-    // useMotionValueEvent(scrollY, "change", (latest) => {
-    //     console.log("Page scroll: ", latest)
-    // })
+    const downloadAPK = () => {
+        // URL del archivo APK
+        const apkUrl = 'https://github.com/Valdo-177/Juntii_lading/raw/refs/heads/main/src/assets/app-release.apk'; // Cambia esta URL por la ubicación de tu archivo APK
+        
+        // Crear un enlace temporal
+        const link = document.createElement('a');
+        link.href = apkUrl;
+        link.download = 'Juntii.apk';  // Nombre del archivo con el que se descargará
+      
+        // Simular un clic en el enlace para iniciar la descarga
+        link.click();
+      };
 
     return (
         <section className='relative overflow-hidden w-full'>
@@ -38,8 +47,8 @@ const DischargeSection = () => {
                 <h2 className='sm:w-[400px] font-bold text-3xl text-center mt-9'>Empieza a ahorrar y pedir como nunca antes.</h2>
                 <p className='sm:w-[50rem] text-center'>Ya no tienes que elegir entre comodidad, precio y sostenibilidad. Con Juntii, transformar tu experiencia de delivery es tan fácil como unirte a tu comunidad. Descubre cómo pedir en grupo te permite ahorrar más, recibir cashback, disfrutar de tus comidas en su punto ideal y, al mismo tiempo, reducir el impacto ambiental. Únete al movimiento Juntii y sé parte de la revolución de los pedidos inteligentes.</p>
                 <div className='flex items-center gap-3 mt-10 flex-col sm:flex-row'>
-                    <BtnApp icon='AppStore' title='Descargar en App Store' />
-                    <BtnApp icon='GooglePlay' title='Disponible en Google Play' />
+                    <BtnApp icon='GooglePlay' title='Descargar en App Store' />
+                    <BtnApp icon='AppStore' title='Disponible en Google Play' onClick={downloadAPK}/>
                 </div>
             </div>
         </section>
