@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import AsCard from './AsCard';
 import DataSource from '@/source/DataSource';
 import Image from 'next/image';
-import movil from '@/assets/img/PhoneMockupHero.png';
+import movil from '@/assets/img/PhoneMockup1.png';
 import { HeroBg } from '@/assets/svg';
 
 const AsSection = () => {

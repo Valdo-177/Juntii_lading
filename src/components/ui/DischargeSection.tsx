@@ -29,7 +29,7 @@ const DischargeSection = () => {
     return (
         <section className='relative overflow-hidden w-full'>
             <HeroBg2 className='absolute -left-[10rem] -z-10' />
-            <div className='px-4 sm:px-4 sm:w-[70rem] mb-10 flex flex-col mx-auto items-center gap-3'>
+            <div className='px-6 sm:px-4 sm:w-[70rem] mb-10 flex flex-col mx-auto items-center gap-3'>
                 <div className='flex items-center relative'>
                     <motion.div
                         style={{ x: XMovement }} // Aplica el movimiento vertical

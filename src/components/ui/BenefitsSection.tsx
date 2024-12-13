@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import React from 'react'
 import movil from '@/assets/img/PhoneMockupHero.png'
+import movil1 from '@/assets/img/PhoneMockup3.png'
+import movil2 from '@/assets/img/PhoneMockup2.png'
 import { motion } from 'framer-motion';
 
 
@@ -39,7 +41,7 @@ const BenefitsSection = () => {
                                 ease: 'easeInOut'
                             }}
                         >
-                            <Image src={movil} alt='' className='-rotate-12 translate-x-[8rem]' />
+                            <Image src={movil1} alt='' className='-rotate-12 translate-x-[8rem]' />
                         </motion.div>
                     </div>
                     <div className='flex flex-col gap-5 items-center'>
@@ -61,7 +63,7 @@ const BenefitsSection = () => {
                                     ease: 'easeInOut'
                                 }}
                             >
-                                <Image src={movil} alt='' className='w-[20rem] sm:translate-y-36 translate-y-10' />
+                                <Image src={movil2} alt='' className='w-[20rem] sm:translate-y-36 translate-y-10' />
                             </motion.div>
                         </div>
                         <div className='bg-[#C4F5FC] flex-col sm:flex-row flex items-center sm:w-[55rem] sm:h-[20rem] h-[41rem] p-6 gap-2 overflow-hidden'>

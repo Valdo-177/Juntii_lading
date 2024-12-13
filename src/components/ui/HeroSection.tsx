@@ -2,7 +2,7 @@
 import React from 'react'
 import BtnApp from './BtnApp'
 import Image from 'next/image'
-import juntiiApp from '@/assets/img/PhoneMockupHero.png'
+import juntiiApp from '@/assets/img/PhoneMockup2.png'
 import { HeroBg, Patter } from '@/assets/svg'
 import { motion } from "motion/react"
 
@@ -28,7 +28,7 @@ const HeroSection = () => {
             <div className='absolute scale-[0.89] -top-[17rem] left-0 -z-[3px]'>
                 <HeroBg />
             </div>
-            <div className='flex flex-col sm:flex-row absolute z-10 items-start sm:max-w-[80rem] w-[21rem] sm:min-w-[80rem] sm:h-[790px]'>
+            <div className='flex flex-col sm:flex-row gap-10 absolute z-10 items-start sm:max-w-[80rem] w-[21rem] sm:min-w-[80rem] sm:h-[790px]'>
                 <motion.div
                     initial={{
                         opacity: 0,

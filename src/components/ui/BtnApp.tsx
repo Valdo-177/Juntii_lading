@@ -1,4 +1,4 @@
-import { Android, AppStore, GooglePlay } from '@/assets/svg'
+import { Android } from '@/assets/svg'
 import React from 'react'
 
 interface IBtnApp {
@@ -7,7 +7,7 @@ interface IBtnApp {
     onClick?: () => void;
 }
 
-const BtnApp = ({ icon = 'AppStore', title = 'proximamente en tiendas de apps', onClick }: IBtnApp) => {
+const BtnApp = ({title = 'proximamente en tiendas de apps', onClick }: IBtnApp) => {
     return (
         <div 
         onClick={onClick}

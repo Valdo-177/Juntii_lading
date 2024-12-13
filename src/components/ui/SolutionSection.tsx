@@ -8,7 +8,7 @@ const SolutionSection = () => {
 
     const {DataSolutionSection} = DataSource()
     return (
-        <section className='flex flex-col items-center my-20'>
+        <section className='px-6 sm:px-4 flex flex-col items-center my-20'>
             <span className='uppercase text-primary font-semibold tracking-[0.1rem]'>Solución</span>
             <h2 className='sm:w-[510px] font-bold text-3xl text-center'>Con Juntii, pedir comida es más fácil, económico y sostenible.</h2>
             <motion.div
