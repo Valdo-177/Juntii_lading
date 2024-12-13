@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const BenefitsSection = () => {
     return (
-        <section className='px-4 sm:px-0 flex flex-col items-center mb-10'>
+        <section className='px-4 sm:px-0 hidden sm:flex flex-col items-center mb-10 '>
             <div className='sm:max-w-[80rem] sm:min-w-[80rem]'>
                 <div className='flex items-center my-10 flex-col sm:flex-row'>
                     <div>

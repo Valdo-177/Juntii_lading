@@ -71,7 +71,7 @@ const AsCard = ({ data }: { data: IAsCard }) => {
     );
     return (
         <div
-            className='w-[18rem]'
+            className='w-[18rem] flex flex-col items-center'
         >
             <div className='flex items-center mb-5 gap-4 w-[max-content]'>
                 <motion.div
@@ -93,7 +93,7 @@ const AsCard = ({ data }: { data: IAsCard }) => {
                 </div>
             </div>
             <span className='font-bold text-xl'>{title}</span>
-            <p className='text-sm font-light'>{description}</p>
+            <p className='text-sm font-light text-center sm:text-start'>{description}</p>
         </div>
     )
 }

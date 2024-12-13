@@ -15,7 +15,7 @@ const AsSection = () => {
     
     return (
         <section className="pb-[12rem] overflow-hidden text-white w-full flex flex-col items-center">
-            <div className="px-4 sm:px-0 flex flex-col relative py-16 gap-7 items-center h-[78rem] sm:h-[65rem] bg-primary w-full">
+            <div className="px-4 sm:px-0 flex flex-col relative py-16 gap-7 items-center h-[81rem] sm:h-[65rem] bg-primary w-full">
                 <HeroBg className="absolute" />
                 <div className="absolute flex flex-col items-center gap-7">
                     <span className="uppercase text-white font-normal tracking-[0.1rem]">
@@ -32,7 +32,7 @@ const AsSection = () => {
                 </div>
                 <motion.div
                     style={{ y: yMovement }} // Aplica el movimiento vertical
-                    className="absolute -bottom-[11rem]"
+                    className="absolute -bottom-[12rem]"
                 >
                     <Image src={movil} alt="" />
                 </motion.div>
