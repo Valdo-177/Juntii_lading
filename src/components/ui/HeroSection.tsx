@@ -11,7 +11,7 @@ const HeroSection = () => {
 
     const downloadAPK = () => {
         // URL del archivo APK
-        const apkUrl = 'https://github.com/Valdo-177/Juntii_lading/raw/refs/heads/main/src/assets/app-release.apk'; // Cambia esta URL por la ubicación de tu archivo APK
+        const apkUrl = 'https://github.com/Valdo-177/Juntii_lading/raw/refs/heads/main/src/assets/juntii-app.apk'; // Cambia esta URL por la ubicación de tu archivo APK
         
         // Crear un enlace temporal
         const link = document.createElement('a');
