@@ -71,7 +71,7 @@ const AsCard = ({ data }: { data: IAsCard }) => {
     );
     return (
         <div
-            className='w-[18rem] flex flex-col items-center'
+            className={`w-[18rem] flex flex-col ${row == 'none' ? 'sm:items-start items-center' : 'items-center'}`}
         >
             <div className='flex items-center mb-5 gap-4 w-[max-content]'>
                 <motion.div

@@ -2,7 +2,7 @@
 import React from 'react'
 import BtnApp from './BtnApp'
 import Image from 'next/image'
-import juntiiApp from '@/assets/img/PhoneMockup2.png'
+import juntiiApp from '@/assets/img/movil2.png'
 import { HeroBg, Patter } from '@/assets/svg'
 import { motion } from "motion/react"
 
@@ -86,7 +86,7 @@ const HeroSection = () => {
                             translateX: 0
                         }}
                     >
-                        <Image src={juntiiApp} alt='Imagen de precentacion de la aplicacion de Juntii' className='h-full ' />
+                        <Image src={juntiiApp} alt='Imagen de precentacion de la aplicacion de Juntii' className='h-full w-[26rem]' />
                     </motion.div>
                 </div>
             </div>

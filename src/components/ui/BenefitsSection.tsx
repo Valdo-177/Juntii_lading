@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import movil from '@/assets/img/PhoneMockupHero.png'
 import movil1 from '@/assets/img/PhoneMockup3.png'
 import movil2 from '@/assets/img/PhoneMockup2.png'
@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 
 
 const BenefitsSection = () => {
+    const [hover, setHover] = useState(0)
     return (
         <section className='px-4 sm:px-0 hidden sm:flex flex-col items-center mb-10 '>
             <div className='sm:max-w-[80rem] sm:min-w-[80rem]'>
@@ -19,7 +20,10 @@ const BenefitsSection = () => {
                     <p>Con Juntii, transformar la experiencia de los pedidos a domicilio es más que una promesa: es una realidad. Pide junto a tu comunidad, reduce costos, gana cashback, y contribuye a un mundo más sostenible. Descubre cómo Juntii hace que cada pedido sea más inteligente.</p>
                 </div>
                 <div className='flex items-center gap-5 flex-col sm:flex-row'>
-                    <div className='bg-[#C4F5FC] overflow-hidden flex flex-col items-start w-[22rem] p-6 gap-2 h-[41rem]'>
+                    <div
+                        onMouseOver={() => setHover(1)}
+                        onMouseOut={() => setHover(0)}
+                        className='bg-[#C4F5FC] overflow-hidden flex flex-col items-start w-[22rem] p-6 gap-2 h-[41rem]'>
                         <h4 className='text-2xl font-bold'>Pedidos Comunitarios</h4>
                         <p>
                             ¿Cuántas veces has pedido comida solo, pagando altos costos de envío?
@@ -32,10 +36,14 @@ const BenefitsSection = () => {
                                 rotateY: 20,
                                 x: 50
                             }}
-                            whileHover={{
+                            animate={hover == 1 ? {
                                 rotateX: 0,
                                 rotateY: 0,
                                 x: -7
+                            } : {
+                                rotateX: 20,
+                                rotateY: 20,
+                                x: 50
                             }}
                             transition={{
                                 ease: 'easeInOut'
@@ -45,7 +53,10 @@ const BenefitsSection = () => {
                         </motion.div>
                     </div>
                     <div className='flex flex-col gap-5 items-center'>
-                        <div className='bg-[#C4F5FC] flex-col sm:flex-row flex items-center sm:w-[55rem] sm:h-[20rem] h-[41rem] p-6 gap-2 overflow-hidden'>
+                        <div
+                            onMouseOver={() => setHover(2)}
+                            onMouseOut={() => setHover(0)}
+                            className='bg-[#C4F5FC] flex-col sm:flex-row flex items-center sm:w-[55rem] sm:h-[20rem] h-[41rem] p-6 gap-2 overflow-hidden'>
                             <div className='flex flex-col items-start sm:w-[30rem]'>
                                 <h4 className='text-2xl font-bold'>Cashback Automático</h4>
                                 <p>
@@ -56,8 +67,10 @@ const BenefitsSection = () => {
                                 initial={{
                                     y: 140,
                                 }}
-                                whileHover={{
+                                animate={hover == 2 ? {
                                     y: 0,
+                                } : {
+                                    y: 140
                                 }}
                                 transition={{
                                     ease: 'easeInOut'
@@ -66,7 +79,10 @@ const BenefitsSection = () => {
                                 <Image src={movil2} alt='' className='w-[20rem] sm:translate-y-36 translate-y-10' />
                             </motion.div>
                         </div>
-                        <div className='bg-[#C4F5FC] flex-col sm:flex-row flex items-center sm:w-[55rem] sm:h-[20rem] h-[41rem] p-6 gap-2 overflow-hidden'>
+                        <div
+                            onMouseOver={() => setHover(3)}
+                            onMouseOut={() => setHover(0)}
+                            className='bg-[#C4F5FC] flex-col sm:flex-row flex items-center sm:w-[55rem] sm:h-[20rem] h-[41rem] p-6 gap-2 overflow-hidden'>
                             <div className='flex flex-col items-start sm:w-[30rem]'>
                                 <h4 className='text-2xl font-bold'>Impacto Ambiental Reducido</h4>
                                 <p>
@@ -77,8 +93,10 @@ const BenefitsSection = () => {
                                 initial={{
                                     y: 140,
                                 }}
-                                whileHover={{
+                                animate={hover == 3 ? {
                                     y: 0,
+                                } : {
+                                    y: 140
                                 }}
                                 transition={{
                                     ease: 'easeInOut'
